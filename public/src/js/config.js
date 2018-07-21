@@ -35,13 +35,22 @@ angular.module('insight').config(function($routeProvider) {
       templateUrl: 'views/address.html',
       title: 'Zcash Address '
     }).
-    when('/charts/:chartType?', {
+    when('/charts', {
       templateUrl: 'views/charts.html',
       title: 'Charts'
     }).
+    when('/stats', {
+      templateUrl: 'views/statistics.html',
+      title: 'Stats'
+    })
+    when('/stats/:type/:days', {
+      controller: 'StatisticsController',
+      templateUrl: 'views/chart.html',
+      title: 'Statistics'
+    }).
     when('/rich-list', {
       controller: 'RichListController',
-      templateUrl: 'views/rich__list.html',
+      templateUrl: 'views/rich_list.html',
       title: 'Rich List'
     }).
     when('/status', {

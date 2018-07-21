@@ -23,7 +23,9 @@ angular.module('insight',[
   'insight.richList',
   'insight.transactions',
   'insight.address',
+  'insight.chart',
   'insight.search',
+  'insight.markets',
   'insight.charts',
   'insight.statistics',
   'insight.status',
@@ -39,6 +41,8 @@ angular.module('insight.transactions', []);
 angular.module('insight.address', []);
 angular.module('insight.search', []);
 angular.module('insight.charts', []);
+angular.module('insight.markets', []);
+angular.module('insight.chart', []);
 angular.module('insight.richList', []);
 angular.module('insight.statistics', [ 'ngNumeraljs' ]);
 angular.module('insight.status', []);

@@ -26,13 +26,15 @@
       </a>
     </div>
   </div>
-  <div data-ng-if="tx.txid">
+  <div class="col-xs-1222 col-md-1222 col-gray">
     <h1><span translate>Transaction</span> 
-      <small data-ng-show="from_vin || from_vout">
-        <span data-ng-show="from_vin" translate>Input</span> 
-        <span data-ng-show="from_vout" translate>Output</span> 
-        <span>{{v_index}}</span>
-      </small>
+      <span data-ng-if="tx.txid">
+        <small data-ng-show="from_vin || from_vout">
+          <span data-ng-show="from_vin" translate>Input</span> 
+          <span data-ng-show="from_vout" translate>Output</span> 
+          <span>{{v_index}}</span>
+        </small>
+      </span>
     </h1>
     <div class="progress progress-striped active" data-ng-if="!tx.txid">
       <div class="progress-bar progress-bar-info" style="width: 100%">

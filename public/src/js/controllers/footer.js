@@ -21,10 +21,10 @@ angular.module('insight.system').controller('FooterController',
       name: 'English',
       isoCode: 'en',
     }, {
-      name: 'Spanish',
+      name: 'Español',
       isoCode: 'es',
     }, {
-      name: 'Japanese',
+      name: '⽇本語',
       isoCode: 'ja',
     }];
 
@@ -34,7 +34,7 @@ angular.module('insight.system').controller('FooterController',
       localStorage.setItem('insight-language', isoCode);
       var currentPageTemplate = $route.current.templateUrl;
       $templateCache.remove(currentPageTemplate);
-      $route.reload();
+      location.reload();
     };
 
   });
